@@ -18,7 +18,5 @@ public interface Movieservice {
 
 	Movie getMovieByShowtime(String showtime);
 
-	Movie getMovieByGenre(String genre);
-
 	Movie saveMovie(MovieDTO moviedto);
 }

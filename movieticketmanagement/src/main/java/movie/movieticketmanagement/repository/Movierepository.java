@@ -10,6 +10,4 @@ public interface Movierepository extends JpaRepository<Movie, Integer> {
 
 	Movie getMovieByShowtime(String showtime);
 
-	Movie getMovieByGenre(String genre);
-
 }

@@ -22,9 +22,13 @@ public class MovieticketmanagementApplication implements CommandLineRunner {
 		// TODO Auto-generated method stub
 		Movie m1 = Movie.builder().name("Avengers").genre("Action").showtime("11.30am").price(200.00).seats(102)
 				.review("Blockbuster").build();
-
+		Movie m2 = Movie.builder().name("KGF 1").genre("Action").showtime("10.30am").price(250.00).seats(102)
+				.review("Blockbuster").build();
+		Movie m3 = Movie.builder().name("KGF 2").genre("Action,drama").showtime("09.30am").price(300.00).seats(150)
+				.review("Blockbuster").build();
 		movierepository.save(m1);
-
+		movierepository.save(m2);
+		movierepository.save(m3);
 		System.out.println("-----All saved-----");
 
 	}

@@ -49,7 +49,7 @@ public class SeviceImpl implements Movieservice {
 	public String delete(int id) {
 		// TODO Auto-generated method stub
 		movierepository.deleteById(id);
-		return "The movie with id" + id + "has been deleted!!";
+		return "The movie with id " + id + " has been deleted!!";
 	}
 
 	@Override
@@ -62,12 +62,6 @@ public class SeviceImpl implements Movieservice {
 	public Movie getMovieByShowtime(String showtime) {
 		// TODO Auto-generated method stub
 		return movierepository.getMovieByShowtime(showtime);
-	}
-
-	@Override
-	public Movie getMovieByGenre(String genre) {
-		// TODO Auto-generated method stub
-		return movierepository.getMovieByGenre(genre);
 	}
 
 }

@@ -59,11 +59,6 @@ public class MovieController {
 		return movieservice.getMovieByShowtime(showtime);
 	}
 
-	@GetMapping("/movieBygenre")
-	public Movie getMovieByGenre(@RequestParam String genre) {
-		return movieservice.getMovieByGenre(genre);
-	}
-
 	@DeleteMapping("/movie/{id}")
 	public String deleteCEmployee(@PathVariable int id) {
 		return movieservice.delete(id);
